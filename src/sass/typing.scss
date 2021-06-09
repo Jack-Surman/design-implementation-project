@@ -1,162 +1,135 @@
-.light-h1-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $xxl-font;
-  line-height: $line-spacing-72;
-  letter-spacing: $character-spacing;
-  color: $super-dark-color1;
+.h1-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: 0;
+  color: $font-dark;
 }
-.light-h2-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $xl-font;
-  line-height: $line-spacing-64;
-  letter-spacing: $character-spacing;
-  color: $super-dark-color1;
+.h2-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0;
+  color: $font-dark;
 }
-.light-h3-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $l-font;
-  line-height: $line-spacing-48;
-  letter-spacing: $character-spacing;
-  color: $super-dark-color1;
+.h3-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0;
+  color: $font-dark;
 }
-.light-h4-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $m-font;
-  line-height: $line-spacing-32;
-  letter-spacing: $character-spacing;
-  color: $super-dark-color1;
+.h4-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: $font-dark;
 }
-.light-h5-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $s-font;
-  line-height: $line-spacing-24;
-  letter-spacing: $character-spacing;
-  color: $super-dark-color1;
+.h5-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: $font-dark;
 }
-.light-label-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $xs-font;
-  line-height: $line-spacing-17;
-  letter-spacing: $character-spacing;
-  color: $super-dark-color1;
+.text-label-dark {
+  font-family: Source Code Pro, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0;
+  color: $font-dark;
 }
-.light-text-right {
-  font-family: $font-family-source;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-600;
-  font-size: $s-font;
-  line-height: $line-spacing-24;
-  letter-spacing: $character-spacing;
-  color: $super-dark-color1;
+.text-dark {
+  font-family: Source Code Pro, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: $font-dark;
 }
-.light-text_gray-right {
-  font-family: $font-family-source;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-normal;
-  font-size: $s-font;
-  line-height: $line-spacing-24;
-  letter-spacing: $character-spacing;
-  color: $grey-color12;
+.h1-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: 0;
+  color: $font-white;
 }
-.light-text_small-right {
-  font-family: $font-family-source;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-600;
-  font-size: $xs-font;
-  line-height: $line-spacing-24;
-  letter-spacing: $character-spacing;
-  color: $super-dark-color1;
+.h2-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0;
+  color: $font-white;
 }
-.dark-h1-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $xxl-font;
-  line-height: $line-spacing-72;
-  letter-spacing: $character-spacing;
-  color: $primary-color;
+.h3-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0;
+  color: $font-white;
 }
-.dark-h2-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $xl-font;
-  line-height: $line-spacing-64;
-  letter-spacing: $character-spacing;
-  color: $primary-color;
+.h4-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: $font-white;
 }
-.dark-h3-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $l-font;
-  line-height: $line-spacing-48;
-  letter-spacing: $character-spacing;
-  color: $primary-color;
+.h5-dark {
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: $font-white;
 }
-.dark-h4-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $m-font;
-  line-height: $line-spacing-32;
-  letter-spacing: $character-spacing;
-  color: $primary-color;
+.text-gray {
+  font-family: Source Code Pro, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: $gray-main;
 }
-.dark-h5-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $s-font;
-  line-height: $line-spacing-24;
-  letter-spacing: $character-spacing;
-  color: $primary-color;
+.text-label-dark {
+  font-family: Source Code Pro, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0;
+  color: $font-white;
 }
-.dark-label-right {
-  font-family: $font-family-poppins;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-bold;
-  font-size: $xs-font;
-  line-height: $line-spacing-17;
-  letter-spacing: $character-spacing;
-  color: $primary-color;
-}
-.dark-text-right {
-  font-family: $font-family-source;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-600;
-  font-size: $s-font;
-  line-height: $line-spacing-24;
-  letter-spacing: $character-spacing;
-  color: $primary-color;
-}
-.dark-text_gray-right {
-  font-family: $font-family-source;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-normal;
-  font-size: $s-font;
-  line-height: $line-spacing-24;
-  letter-spacing: $character-spacing;
-  color: $grey-color12;
-}
-.dark-text_small-right {
-  font-family: $font-family-source;
-  font-style: $font-style-normal;
-  font-weight: $font-weight-600;
-  font-size: $xs-font;
-  line-height: $line-spacing-24;
-  letter-spacing: $character-spacing;
-  color: $primary-color;
+.text-dark {
+  font-family: Source Code Pro, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: $font-white;
 }

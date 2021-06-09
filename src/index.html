@@ -1,9 +1,3 @@
-<!--NAMING Convention
-Element: myElement
-Element child: myElement-child (only 2-3 deep if possible)
-Element with modifier: myElement--red
--->
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,56 +14,21 @@ Element with modifier: myElement--red
     <title>Design Project</title>
 </head>
 <body>
-<!--TODO: This should not be wrapping everything
-You want the background to go all the way to the edge. Example:
-<header> //Background on this element
-    <div class="container">
-        ...content goes here
-    </div>
-</header>
-This should pretty much be your default for each section
--->
-<div class="container">
-<!--    TODO: 'first-part' not very descriptive -->
-<!--    TODO: A lot of unnecessary markup.
- This should be as simple as:
- <header>
-    <div class="container">
-        <h3...
-        <nav...
-        <button...
-    </div>
- </header>
- -->
-    <div class="first-part-container">
-        <div class="first-part">
-            <!--    TODO: don't have header as the same and the element. Call it mastHead or mainHeader etc -->
-            <header class="header">
-                <h3 class="dark-h3-right">RELAP</h3>
-<!--                TODO: should be <nav> tag-->
-                <div class="menu">
-                    <a href="#" class="dark-text_gray-right">Home</a>
-                    <a href="#" class="dark-text_gray-right">Features</a>
-                    <a href="#" class="dark-text_gray-right">Works</a>
-                    <a href="#" class="dark-text_gray-right">About</a>
-                    <a href="#" class="dark-text_gray-right">People</a>
-                    <a href="#" class="dark-text_gray-right">News</a>
-                </div>
-                <div class="button">
-                    <a href="#" class="dark-text-right">Contact Us</a>
-                </div>
-            </header>
-<!--            <div class="first-content">-->
-<!--                <h1 class="dark-h1-right">Omnis Voluptas</h1>-->
-<!--                <p class="dark-text-right">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et-->
-<!--                    voluptates repudiandae sint et molestiae non recusandae.</p>-->
-<!--                <div class="button">-->
-<!--                    <a href="#" class="dark-text-right">Explore</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <img src="/img/laptop-image.PNG" alt="laptop image">-->
+<div class="container-main">
+    <header class="header-main">
+        <div class="container">
+            <h3 class="header-main-title h3-dark">RELAP</h3>
+            <nav class="header-main-nav">
+                <a href="#" class="text-gray">Home</a>
+                <a href="#" class="text-gray">Features</a>
+                <a href="#" class="text-gray">Works</a>
+                <a href="#" class="text-gray">About</a>
+                <a href="#" class="text-gray">People</a>
+                <a href="#" class="text-gray">News</a>
+            </nav>
+            <a class="header-main-button button text-dark" href="#">Contact Us</a>
         </div>
-    </div>
+    </header>
 </div>
 </body>
 </html>
