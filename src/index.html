@@ -10,12 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro:wght@400;700&
     display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Design Project</title>
 </head>
 <body>
-<div id="container-main">
     <header id="header">
         <div id="header-top" class="container">
             <h3 id="header-title" class="h3-dark">RELAP</h3>
@@ -27,14 +25,30 @@
                 <a href="#" class="text-gray">People</a>
                 <a href="#" class="text-gray">News</a>
             </nav>
-            <!--TODO: Not correct markup, use a <button>-->
-            <a href="#" id="header-icon">
+            <button id="header-icon">
                 <i class="fas fa-bars"></i>
-            </a>
-            <a id="header-button" class="button text-dark" href="#">Contact Us</a>
+            </button>
+            <a id="header-top-button" class="button text-dark" href="#">Contact Us</a>
         </div>
-        <div id="header-bottom">Test</div>
+        <div id="header-bottom" class="container">
+            <div id="header-content">
+                <h1 class="h1-dark">Omnis Voluptas</h1>
+                <p class="text-gray">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                <a href="#" id="header-bottom-button" class="button text-dark">Explore</a>
+            </div>
+            <div id="image-container">
+                <img src="/img/laptop-image.PNG" alt="laptop image">
+                <div class="fb-icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="tw-icon">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="ig-icon">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </header>
-</div>
 </body>
 </html>
