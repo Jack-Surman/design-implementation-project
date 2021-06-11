@@ -5,10 +5,13 @@
   padding: 0;
   box-sizing: inherit;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  //overflow: hidden;
   a {
     text-decoration: none;
   }

@@ -1,0 +1,182 @@
+#accordion-section {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 96px 135px 96px 135px;
+  background-color: $font-white;
+  @media only screen and (max-width: $br-xxl) {
+    padding: 96px 0px 96px 135px;
+  }
+  @media only screen and (max-width: $br-xxl) {
+    padding: 56px 0px 56px 15px;
+  }
+  @media only screen and (max-width: $br-sm) {
+    flex-direction: column;
+    padding: 0;
+  }
+  &-wrapper {
+    position: relative;
+    .accordion-section-item {
+      margin-top: 20px;
+      @media only screen and (max-width: $br-md) {
+        margin-top: 20px;
+      }
+      @media only screen and (max-width: $br-sm) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @media only screen and (max-width: $br-sm) {
+      width: 100%;
+      padding: 5% 15px;
+    }
+    p {
+      top: -20%;
+      @media only screen and (max-width: $br-lg) {
+        position: relative;
+        top: 10%;
+      }
+      @media only screen and (max-width: $br-md) {
+        position: relative;
+        top: 0%;
+      }
+    }
+    h2 {
+      position: relative;
+      top: -5%;
+
+      @media only screen and (max-width: $br-lg) {
+        font-size: 40px;
+        line-height: 48px;
+        top: 5%;
+      }
+      @media only screen and (max-width: $br-sm) {
+        font-size: 40px;
+        line-height: 48px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 4% 0;
+      }
+    }
+    button {
+      position: relative;
+      cursor: pointer;
+      border: none;
+      text-align: left;
+      width: 100%;
+      z-index: 1000;
+      background-color: transparent;
+      @media only screen and (max-width: $br-sm) {
+        width: 100%;
+      }
+      i {
+        font-size: 10px;
+        margin-left: 1%;
+      }
+    }
+    .accordion-section-underline {
+      content: '';
+      left: 0;
+      position: relative;
+      display: inline-block;
+      width: 155px;
+      transform: translateY(-18px);
+      height: 7px;
+      background-color: $purple-main;
+      z-index: 0;
+    }
+  }
+  &-right {
+    img {
+      @media only screen and (max-width: $br-xl) {
+        width: 500px;
+      }
+      @media only screen and (max-width: $br-lg) {
+        width: 400px;
+      }
+      @media only screen and (max-width: $br-md) {
+        width: 300px;
+      }
+      @media only screen and (max-width: $br-sm) {
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width: $br-md) {
+      display: flex;
+      align-items: center;
+    }
+    @media only screen and (max-width: $br-sm) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &-button {
+      cursor: pointer;
+      position: absolute;
+      text-align: center;
+      bottom: -39vh;
+      left: 41.5vw;
+      box-shadow: 0 .5rem 2rem rgba(1,1,1, .3);
+      padding: 40px;
+      border-radius: 50%;
+      background-color: #fff;
+      @media only screen and (max-width: $br-xxl) {
+        left: 43vw;
+        bottom: -35vh;
+      }
+      @media only screen and (max-width: $br-xl) {
+        left: 57vw;
+        bottom: -11vh;
+        padding: 24px;
+      }
+      @media only screen and (max-width: $br-lg) {
+        left: 60vw;
+        bottom: 19.5vh;
+        padding: 20px;
+      }
+      @media only screen and (max-width: $br-md) {
+        left: 62vw;
+        bottom: 32.5vh;
+        padding: 12px;
+      }
+      @media only screen and (max-width: $br-sm) {
+        left: 47vw;
+        bottom:-55vh;
+        padding: 25px;
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        color: $purple-main;
+        font-size: 35px;
+        height: 20px;
+        width: 30px;
+        @media only screen and (max-width: $br-xl) {
+          height: 5px;
+          width: 24px;
+          font-size: 24px;
+        }
+        @media only screen and (max-width: $br-lg) {
+          height: 5px;
+          width: 16px;
+          font-size: 16px;
+        }
+        @media only screen and (max-width: $br-md) {
+          height: 5px;
+          width: 16px;
+          font-size: 12px;
+        }
+        @media only screen and (max-width: $br-sm) {
+          font-size: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+}
