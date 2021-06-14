@@ -64,6 +64,41 @@
       top: -25%;
       left: 8%;
       visibility: hidden;
+      @media only screen and (max-width: $br-xl) {
+        h4 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      @media only screen and (max-width: $br-lg) {
+        h4 {
+          font-size: 16px;
+          line-height: 16px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: $br-md) {
+        h4 {
+          font-size: 16px;
+          line-height: 12px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: $br-sm) {
+        h4 {
+          font-size: 42px;
+          line-height: 30px;
+        }
+        p {
+          font-size: 24px;
+        }
+      }
     }
     display: flex;
     justify-content: space-between;
