@@ -2,7 +2,7 @@ export default class GalleryPages {
     constructor() {
         this.changePage();
         this.showImageText();
-        this.changeImage();
+        this.showImages();
     }
     changePage() {
         const galleryNav = document.getElementById('gallery-nav').querySelectorAll('button');
@@ -19,9 +19,18 @@ export default class GalleryPages {
             });
         });
     }
-    changeImage() {
+    showImages() {
         const galleryImgCollections = document.querySelectorAll('.gallery-img');
         const galleryNavItems = document.getElementById('gallery-nav').querySelectorAll('button');
+        const allWorksBtn = document.getElementById('gallery-button');
+        allWorksBtn.addEventListener('click', () => {
+            if (allWorksBtn.textContent === 'All works') {
+                allWorksBtn.textContent = 'Less works';
+            } else allWorksBtn.textContent = 'All works';
+           galleryImgCollections.forEach(galleryCollection => {
+              galleryCollection.classList.toggle('hide');
+           });
+        });
         galleryNavItems.forEach(navItem => {
             const navDataNum = navItem.dataset.num;
             navItem.addEventListener('click', () => {
