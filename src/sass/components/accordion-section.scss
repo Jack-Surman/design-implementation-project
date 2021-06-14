@@ -1,47 +1,17 @@
-// Nice idea with using '&-...' for your names. But this makes searching for styles very difficult.
-// Imagine you have 100s of files and you want to find the styles for #accordion-section-wrapper.
-// So might be better to write out the full names
-
 #accordion-section {
   display: flex;
   justify-content: center;
-  // --- Duplicate of container class?
-  max-width: 100%;
-  width: 1440px;
-  margin: 0 auto;
-  // ---
-  padding: 96px 135px 96px 135px;
-  // Not good to use a font variable here
-  background-color: $font-white;
-
-  // --- All this padding not necessary if you use the container class
-  @media only screen and (max-width: $br-xxl) {
-    padding: 96px 0px 96px 135px;
-  }
-  @media only screen and (max-width: $br-xxl) {
-    padding: 56px 0px 56px 15px;
-  }
-  @media only screen and (max-width: $br-sm) {
-    flex-direction: column;
-    padding: 0;
-  }
-  // ---
-
-  &-wrapper {
+  background-color: #fff;
+  #accordion-section-wrapper {
     position: relative;
     .accordion-section-item {
       margin-top: 20px;
-      // --- Not needed?
-      @media only screen and (max-width: $br-md) {
-        margin-top: 20px;
-      }
-      // ---
       @media only screen and (max-width: $br-sm) {
         margin-bottom: 30px;
       }
     }
   }
-  &-left {
+  #accordion-section-left {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -105,7 +75,7 @@
       z-index: 0;
     }
   }
-  &-right {
+  #accordion-section-right {
     img {
       @media only screen and (max-width: $br-xl) {
         width: 500px;
@@ -129,7 +99,7 @@
       align-items: center;
       justify-content: flex-end;
     }
-    &-button {
+    #accordion-section-right-button {
       cursor: pointer;
       position: absolute;
       text-align: center;

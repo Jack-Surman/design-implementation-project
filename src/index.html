@@ -14,124 +14,224 @@
     <title>Design Project</title>
 </head>
 <body>
-    <header id="header">
-        <div id="header-top" class="container">
-            <h3 id="header-title" class="h3-light">RELAP</h3>
-            <nav id="header-nav">
-                <a href="#" class="text-gray">Home</a>
-                <a href="#" class="text-gray">Features</a>
-                <a href="#" class="text-gray">Works</a>
-                <a href="#" class="text-gray">About</a>
-                <a href="#" class="text-gray">People</a>
-                <a href="#" class="text-gray">News</a>
-            </nav>
-            <button id="header-icon">
-                <i class="fas fa-bars"></i>
-            </button>
-            <a id="header-top-button" class="button text-light" href="#">Contact Us</a>
+<header id="header" class="container">
+    <h3 id="header-title" class="h3-light">RELAP</h3>
+    <nav id="header-nav">
+        <a href="#" class="text-gray">Home</a>
+        <a href="#" class="text-gray">Features</a>
+        <a href="#" class="text-gray">Works</a>
+        <a href="#" class="text-gray">About</a>
+        <a href="#" class="text-gray">People</a>
+        <a href="#" class="text-gray">News</a>
+    </nav>
+    <button id="header-icon">
+        <i class="fas fa-bars"></i>
+    </button>
+    <a id="header-top-button" class="button text-light" href="#">Contact Us</a>
+</header>
+<section id="top-section">
+    <div id="banner" class="container">
+        <div id="banner-content">
+            <h1 class="h1-light">Omnis Voluptas</h1>
+            <p class="text-gray">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            <a href="#" id="banner-button" class="button text-light">Explore</a>
         </div>
-<!--        TODO: This shouldn't be in the header. This is more of a banner so should be separate  -->
-        <div id="header-bottom" class="container">
-            <div id="header-content">
-                <h1 class="h1-light">Omnis Voluptas</h1>
-                <p class="text-gray">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-                    eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-                <a href="#" id="header-bottom-button" class="button text-light">Explore</a>
-            </div>
-            <div id="image-container">
-                <picture>
-                    <source
-                            media="(max-width: 576px)"
-                            srcset="/img/laptop-image-mobile.PNG">
-                    <img src="/img/laptop-image.PNG" alt="laptop image">
-                </picture>
-                <div class="fb-icon">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </div>
-                <div class="tw-icon">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-                <div class="ig-icon">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </header>
-<!--    TODO: Should be a section tag -->
-    <div id="accordion-section">
-        <div id="accordion-section-left">
-            <p class="h5-dark">QUIS AUTEM</p>
-            <h2 class="h2-dark">Corporis suscipit laboriosam</h2>
-            <div id="accordion-section-wrapper">
-                <div class="accordion-section-item">
-                    <button class="text-dark">Totam rem aperiam <i class="fas fa-chevron-down"></i></button>
-                    <div class="accordion-section-underline hide"></div>
-                    <div class="text-gray accordion-section-content hide">Nam libero tempore, cum soluta nobis est
-                        eligendi optio cumque nihil impedit quo minus
-                        id quod maxime placeat facere possimus, omnis.</div>
-                </div>
-                <div class="accordion-section-item">
-                    <button class="text-dark">Eaque ipsa quae <i class="fas fa-chevron-down"></i></button>
-                    <div class="accordion-section-underline hide"></div>
-                    <div class="text-gray accordion-section-content hide">Nam libero tempore, cum soluta nobis est
-                        eligendi optio cumque nihil impedit quo minus
-                        id quod maxime placeat facere possimus, omnis.</div>
-                </div>
-                <div class="accordion-section-item">
-                    <button class="text-dark">Inventore veritatis <i class="fas fa-chevron-down"></i></button>
-                    <div class="accordion-section-underline hide"></div>
-                    <div class="text-gray accordion-section-content hide">Nam libero tempore, cum soluta nobis est
-                        eligendi optio cumque nihil impedit quo minus
-                        id quod maxime placeat facere possimus, omnis.</div>
-                </div>
-            </div>
-        </div>
-        <div id="accordion-section-right">
+        <div id="image-container">
             <picture>
+                <source
+                        media="(max-width: 576px)"
+                        srcset="/img/laptop-image-mobile.PNG">
+                <img src="/img/laptop-image.PNG" alt="laptop image">
+            </picture>
+            <div class="fb-icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="tw-icon">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="ig-icon">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="accordion-section" class="container">
+    <div id="accordion-section-left">
+        <p class="h5-dark">QUIS AUTEM</p>
+        <h2 class="h2-dark">Corporis suscipit laboriosam</h2>
+        <div id="accordion-section-wrapper">
+            <div class="accordion-section-item">
+                <button class="text-dark">Totam rem aperiam <i class="fas fa-chevron-down"></i></button>
+                <div class="accordion-section-underline hide"></div>
+                <div class="text-gray accordion-section-content hide">Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus
+                    id quod maxime placeat facere possimus, omnis.</div>
+            </div>
+            <div class="accordion-section-item">
+                <button class="text-dark">Eaque ipsa quae <i class="fas fa-chevron-down"></i></button>
+                <div class="accordion-section-underline hide"></div>
+                <div class="text-gray accordion-section-content hide">Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus
+                    id quod maxime placeat facere possimus, omnis.</div>
+            </div>
+            <div class="accordion-section-item">
+                <button class="text-dark">Inventore veritatis <i class="fas fa-chevron-down"></i></button>
+                <div class="accordion-section-underline hide"></div>
+                <div class="text-gray accordion-section-content hide">Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus
+                    id quod maxime placeat facere possimus, omnis.</div>
+            </div>
+        </div>
+    </div>
+    <div id="accordion-section-right">
+        <picture>
             <source
                     media="(max-width: 576px)"
                     srcset="/img/accordion-section-mobile.PNG">
             <img src="/img/accordion-section.PNG" alt="accordion image">
-            </picture>
-            <div id="accordion-section-right-button">
-                <button>&#9654</button>
-            </div>
+        </picture>
+        <div id="accordion-section-right-button">
+            <button>&#9654</button>
         </div>
     </div>
-<!--    TODO: Should be a section tag -->
-    <div id="gallery">
-        <div id="gallery-container" class="container">
-            <p class="h5-dark">NISI UT ALIQUID</p>
-            <div id="gallery-container-top">
-                <h2 class="h2-dark">Ullam corporis suscipit</h2>
-                <p class="text-gray">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-                    tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            </div>
-<!--            TODO: Change implementation slightly:
-                Try to do this as more of tabs/ carousel implementation. The nav part can stay the same. but you'll
-                need a div for each of the nav items content
--->
-            <div id="gallery-container-bottom">
-                <nav id="gallery-nav">
-                    <button data-num="1" class="text-dark-bold">Quis Autem</button>
-                    <button data-num="2" class="text-gray">Reprehenderit</button>
-                    <button data-num="3" class="text-gray">Voluptate</button>
-                    <button data-num="4" class="text-gray">Molestiae</button>
-                    <button data-num="5" class="text-gray">Consequatur</button>
-                </nav>
-                <div id="gallery-img">
-<!--                    TODO: These should have hover over text that goes over the image -->
-                    <img data-num="1" src="/img/gallery-img-1.PNG" alt="gallery image">
-                    <img data-num="2" src="/img/gallery-img-2.PNG" alt="gallery image">
-                    <img data-num="3" src="/img/gallery-img-3.PNG" alt="gallery image">
+</section>
+<section id="gallery">
+    <div id="gallery-container" class="container">
+        <p class="h5-dark">NISI UT ALIQUID</p>
+        <div id="gallery-container-top">
+            <h2 class="h2-dark">Ullam corporis suscipit</h2>
+            <p class="text-gray">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+        <div id="gallery-container-bottom">
+            <nav id="gallery-nav">
+                <button data-num="1" class="text-dark-bold">Quis Autem</button>
+                <button data-num="2" class="text-gray">Reprehenderit</button>
+                <button data-num="3" class="text-gray">Voluptate</button>
+                <button data-num="4" class="text-gray">Molestiae</button>
+                <button data-num="5" class="text-gray">Consequatur</button>
+            </nav>
+            <div class="gallery-img" data-num="1">
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-1.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-2.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-3.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
                 </div>
             </div>
-            <button id="gallery-button" class="button text-light">All works</button>
-<!--            TODO: Too many DIVs? -->
+            <div class="gallery-img hide" data-num="2">
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-4.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-5.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-6.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-img hide" data-num="3">
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-7.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-8.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-9.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-img hide" data-num="4">
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-10.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-11.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-12.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-img hide" data-num="5">
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-13.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-14.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="gallery-img-el">
+                    <img src="/img/gallery-img-15.PNG" alt="gallery image">
+                    <div class="image-text">
+                        <h4 class="h4-light">Exercitation</h4>
+                        <p class="text-gray">Ullamco laboris</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
+        <button id="gallery-button" class="button text-light">All works</button>
     </div>
+</section>
 </body>
 </html>

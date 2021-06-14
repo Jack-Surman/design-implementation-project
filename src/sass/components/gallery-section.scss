@@ -1,33 +1,31 @@
-// TODO: Space out your elements more.
-
 #gallery {
   background-color: $color-pink;
+
   #gallery-button {
     background-color: $purple-main;
     border: none;
     margin: 60px auto;
     cursor: pointer;
   }
-  &-container {
-    padding-top: 60px;
 
-    // TODO: need some padding / space between the two elements inside otherwise they will touch either on a different
-    // screen size or if the text changes
-    &-top {
+  #gallery-container {
+    padding-top: 60px;
+    #gallery-container-top {
       position: relative;
       padding-top: 20px;
       padding-bottom: 40px;
       display: flex;
       justify-content: space-between;
       @media only screen and (max-width: $br-sm) {
-        flex-direction: column;
-        justify-content: center;
+          flex-direction: column;
+          justify-content: center;
         align-items: center;
         text-align: left;
       }
       h2 {
         position: relative;
-        width: 50%;
+        width: 60%;
+        padding-right: 40px;
         @media only screen and (max-width: $br-sm) {
           margin-bottom: 20px;
           width: 100%;
@@ -42,7 +40,8 @@
         }
       }
     }
-    &-bottom {
+
+    #gallery-container-bottom {
       nav {
         button {
           border: none;
@@ -56,21 +55,30 @@
       }
     }
   }
-  #gallery-img {
+
+  .gallery-img {
+    position: relative;
+    .image-text {
+      position: relative;
+      z-index: 1000;
+      top: -25%;
+      left: 8%;
+      visibility: hidden;
+    }
     display: flex;
     justify-content: space-between;
     img {
-      margin-top: 20px;
+      margin: 20px auto 0;
     }
     @media only screen and (max-width: $br-xl) {
       img {
         justify-content: center;
-        width: 32%;
+        width: 95%;
       }
     }
     @media only screen and (max-width: $br-lg) {
       img {
-        width: 30%;
+        width: 90%;
       }
     }
     @media only screen and (max-width: $br-md) {
