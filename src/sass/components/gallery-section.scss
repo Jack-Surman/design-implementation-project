@@ -1,3 +1,5 @@
+// TODO: Space out your elements more.
+
 #gallery {
   background-color: $color-pink;
   #gallery-button {
@@ -8,6 +10,9 @@
   }
   &-container {
     padding-top: 60px;
+
+    // TODO: need some padding / space between the two elements inside otherwise they will touch either on a different
+    // screen size or if the text changes
     &-top {
       position: relative;
       padding-top: 20px;

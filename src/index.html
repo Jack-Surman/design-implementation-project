@@ -30,6 +30,7 @@
             </button>
             <a id="header-top-button" class="button text-light" href="#">Contact Us</a>
         </div>
+<!--        TODO: This shouldn't be in the header. This is more of a banner so should be separate  -->
         <div id="header-bottom" class="container">
             <div id="header-content">
                 <h1 class="h1-light">Omnis Voluptas</h1>
@@ -56,6 +57,7 @@
             </div>
         </div>
     </header>
+<!--    TODO: Should be a section tag -->
     <div id="accordion-section">
         <div id="accordion-section-left">
             <p class="h5-dark">QUIS AUTEM</p>
@@ -96,6 +98,7 @@
             </div>
         </div>
     </div>
+<!--    TODO: Should be a section tag -->
     <div id="gallery">
         <div id="gallery-container" class="container">
             <p class="h5-dark">NISI UT ALIQUID</p>
@@ -106,6 +109,10 @@
                     ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
                     tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             </div>
+<!--            TODO: Change implementation slightly:
+                Try to do this as more of tabs/ carousel implementation. The nav part can stay the same. but you'll
+                need a div for each of the nav items content
+-->
             <div id="gallery-container-bottom">
                 <nav id="gallery-nav">
                     <button data-num="1" class="text-dark-bold">Quis Autem</button>
@@ -115,12 +122,14 @@
                     <button data-num="5" class="text-gray">Consequatur</button>
                 </nav>
                 <div id="gallery-img">
+<!--                    TODO: These should have hover over text that goes over the image -->
                     <img data-num="1" src="/img/gallery-img-1.PNG" alt="gallery image">
                     <img data-num="2" src="/img/gallery-img-2.PNG" alt="gallery image">
                     <img data-num="3" src="/img/gallery-img-3.PNG" alt="gallery image">
                 </div>
             </div>
             <button id="gallery-button" class="button text-light">All works</button>
+<!--            TODO: Too many DIVs? -->
         </div>
         </div>
     </div>
