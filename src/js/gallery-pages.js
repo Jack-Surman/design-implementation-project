@@ -25,11 +25,11 @@ export default class GalleryPages {
             if (buttonNum === 2) {
                 imgNum = imgNum + 3;
             } else if (buttonNum === 3) {
-                imgNum = imgNum + 6;
+                imgNum = imgNum + 3 * (buttonNum - 1);
             } else if (buttonNum === 4) {
-                imgNum = imgNum + 9;
+                imgNum = imgNum + 3 * (buttonNum - 1);
             } else if (buttonNum === 5) {
-                imgNum = imgNum + 12;
+                imgNum = imgNum + 3 * (buttonNum - 1);
             }
             image.setAttribute('src', `/img/gallery-img-${imgNum}.PNG`);
         });
