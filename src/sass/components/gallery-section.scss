@@ -1,0 +1,82 @@
+#gallery {
+  background-color: $color-pink;
+  #gallery-button {
+    background-color: $purple-main;
+    border: none;
+    margin: 60px auto;
+    cursor: pointer;
+  }
+  &-container {
+    padding-top: 60px;
+    &-top {
+      position: relative;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      @media only screen and (max-width: $br-sm) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+      }
+      h2 {
+        position: relative;
+        width: 50%;
+        @media only screen and (max-width: $br-sm) {
+          margin-bottom: 20px;
+          width: 100%;
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+      p {
+        width: 50%;
+        @media only screen and (max-width: $br-sm) {
+          width: 100%;
+        }
+      }
+    }
+    &-bottom {
+      nav {
+        button {
+          border: none;
+          background-color: transparent;
+          margin-right: 20px;
+          @media only screen and (max-width: $br-sm) {
+            margin-bottom: 10px;
+            margin-right: 40px;
+          }
+        }
+      }
+    }
+  }
+  #gallery-img {
+    display: flex;
+    justify-content: space-between;
+    img {
+      margin-top: 20px;
+    }
+    @media only screen and (max-width: $br-xl) {
+      img {
+        justify-content: center;
+        width: 32%;
+      }
+    }
+    @media only screen and (max-width: $br-lg) {
+      img {
+        width: 30%;
+      }
+    }
+    @media only screen and (max-width: $br-md) {
+      margin-top: 10px;
+    }
+    @media only screen and (max-width: $br-sm) {
+      flex-direction: column;
+      margin-top: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
