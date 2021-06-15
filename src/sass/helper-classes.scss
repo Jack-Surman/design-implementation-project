@@ -7,6 +7,13 @@
 .scrollColorChange {
   background-color: $purple-main !important;
 }
-.hideImgText {
+.changeVisibility {
   visibility: visible !important;
+}
+.underline {
+  background-color: $purple-main;
+  z-index: 0;
+  content: '';
+  position: relative;
+  display: inline-block;
 }

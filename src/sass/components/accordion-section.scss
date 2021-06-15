@@ -10,6 +10,9 @@
   display: flex;
   justify-content: center;
   background-color: #fff;
+  @media only screen and (max-width: $br-sm) {
+    flex-direction: column;
+  }
   #accordion-section-wrapper {
     position: relative;
     .accordion-section-item {
@@ -72,18 +75,14 @@
       }
     }
     .accordion-section-underline {
-      content: '';
       left: 0;
-      position: relative;
-      display: inline-block;
       width: 155px;
       transform: translateY(-18px);
       height: 7px;
-      background-color: $purple-main;
-      z-index: 0;
     }
   }
   #accordion-section-right {
+    position: relative;
     img {
       @media only screen and (max-width: $br-xl) {
         width: 500px;
@@ -111,34 +110,24 @@
       cursor: pointer;
       position: absolute;
       text-align: center;
-      bottom: -39vh;
-      left: 41.5vw;
+      top: 49%;
+      left: 10.5%;
+      transform: translate(-50%, -50%);
       box-shadow: 0 .5rem 2rem rgba(1,1,1, .3);
       padding: 40px;
       border-radius: 50%;
       background-color: #fff;
-      @media only screen and (max-width: $br-xxl) {
-        left: 43vw;
-        bottom: -35vh;
-      }
       @media only screen and (max-width: $br-xl) {
-        left: 57vw;
-        bottom: -11vh;
         padding: 24px;
       }
       @media only screen and (max-width: $br-lg) {
-        left: 60vw;
-        bottom: 19.5vh;
         padding: 20px;
       }
       @media only screen and (max-width: $br-md) {
-        left: 62vw;
-        bottom: 32.5vh;
         padding: 12px;
       }
       @media only screen and (max-width: $br-sm) {
-        left: 47vw;
-        bottom:-55vh;
+        left: 52%;
         padding: 25px;
       }
       button {
