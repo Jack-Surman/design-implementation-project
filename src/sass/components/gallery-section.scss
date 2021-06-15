@@ -1,4 +1,4 @@
-#gallery {
+#gallery-section {
   background-color: $color-pink;
 
   #gallery-button {
@@ -58,12 +58,52 @@
 
   .gallery-img {
     position: relative;
+    .gallery-img-el {
+      position: relative;
+      .image-container {
+        position: relative;
+        margin: 20px auto 0;
+        z-index: 1000;
+        background-color: #111;
+        &:hover {
+          ~ .image-text {
+            transition: visibility .4s ease-in;
+            visibility: visible;
+          }
+          img {
+            opacity: .5;
+            transition: opacity .2s ease-in;
+          }
+        }
+        @media only screen and (max-width: $br-xl) {
+          width: 95%;
+        }
+        @media only screen and (max-width: $br-lg) {
+          width: 90%;
+        }
+        @media only screen and (max-width: $br-md) {
+          margin-top: 10px;
+        }
+        @media only screen and (max-width: $br-sm) {
+          margin-top: 10px;
+          width: 100%;
+        }
+      }
+    }
     .image-text {
       position: relative;
       z-index: 1000;
       top: -25%;
       left: 8%;
       visibility: hidden;
+      &:hover {
+        transition: visibility .4s ease-in;
+        visibility: visible;
+        .image-container img {
+          opacity: .5;
+          transition: opacity .2s ease-in;
+        }
+      }
       @media only screen and (max-width: $br-xl) {
         h4 {
           font-size: 20px;
@@ -103,17 +143,12 @@
     display: flex;
     justify-content: space-between;
     img {
-      margin: 20px auto 0;
+      width: 100%;
+      height: 100%;
     }
     @media only screen and (max-width: $br-xl) {
       img {
         justify-content: center;
-        width: 95%;
-      }
-    }
-    @media only screen and (max-width: $br-lg) {
-      img {
-        width: 90%;
       }
     }
     @media only screen and (max-width: $br-md) {
@@ -122,9 +157,6 @@
     @media only screen and (max-width: $br-sm) {
       flex-direction: column;
       margin-top: 10px;
-      img {
-        width: 100%;
-      }
     }
   }
 }

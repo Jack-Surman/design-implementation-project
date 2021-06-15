@@ -1,15 +1,20 @@
-#header {
+#header-section {
   position: fixed;
   background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
   z-index: 10000;
   @media only screen and (max-width: $br-sm) {
     background-color: #fff;
+  }
+  #header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 10000;
   }
   #header-title {
     @media only screen and (max-width: $br-md) {

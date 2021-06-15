@@ -3,7 +3,7 @@ export default class HeaderScroll {
         this.colorChangeScroll();
     }
     colorChangeScroll() {
-        const headerElement = document.getElementById('header');
+        const headerElement = document.getElementById('header-section');
         const bodyWidth = document.querySelector('body').offsetWidth;
         window.addEventListener('scroll', () => {
             if (bodyWidth > 500) {

@@ -14,21 +14,23 @@
     <title>Design Project</title>
 </head>
 <body>
-<header id="header" class="container">
-    <h3 id="header-title" class="h3-light">RELAP</h3>
-    <nav id="header-nav">
-        <a href="#" class="text-grey">Home</a>
-        <a href="#" class="text-grey">Features</a>
-        <a href="#" class="text-grey">Works</a>
-        <a href="#" class="text-grey">About</a>
-        <a href="#" class="text-grey">People</a>
-        <a href="#" class="text-grey">News</a>
-    </nav>
-    <button id="header-icon">
-        <i class="fas fa-bars"></i>
-    </button>
-    <a id="header-top-button" class="button text-light" href="#">Contact Us</a>
-</header>
+<section id="header-section">
+    <header id="header-container" class="container">
+        <h3 id="header-title" class="h3-light">RELAP</h3>
+        <nav id="header-nav">
+            <a href="#" class="text-grey">Home</a>
+            <a href="#" class="text-grey">Features</a>
+            <a href="#" class="text-grey">Works</a>
+            <a href="#" class="text-grey">About</a>
+            <a href="#" class="text-grey">People</a>
+            <a href="#" class="text-grey">News</a>
+        </nav>
+        <button id="header-icon">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a id="header-top-button" class="button text-light" href="#">Contact Us</a>
+    </header>
+</section>
 <section id="top-section">
     <div id="banner" class="container">
         <div id="banner-content">
@@ -56,47 +58,49 @@
         </div>
     </div>
 </section>
-<section id="accordion-section" class="container">
-    <div id="accordion-section-left">
-        <p class="h5-dark">QUIS AUTEM</p>
-        <h2 class="h2-dark">Corporis suscipit laboriosam</h2>
-        <div id="accordion-section-wrapper">
-            <div class="accordion-section-item">
-                <button class="text-dark">Totam rem aperiam <i class="fas fa-chevron-down"></i></button>
-                <div class="accordion-section-underline underline hide"></div>
-                <div class="text-grey accordion-section-content hide">Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus
-                    id quod maxime placeat facere possimus, omnis.</div>
-            </div>
-            <div class="accordion-section-item">
-                <button class="text-dark">Eaque ipsa quae <i class="fas fa-chevron-down"></i></button>
-                <div class="accordion-section-underline underline hide"></div>
-                <div class="text-grey accordion-section-content hide">Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus
-                    id quod maxime placeat facere possimus, omnis.</div>
-            </div>
-            <div class="accordion-section-item">
-                <button class="text-dark">Inventore veritatis <i class="fas fa-chevron-down"></i></button>
-                <div class="accordion-section-underline underline hide"></div>
-                <div class="text-grey accordion-section-content hide">Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus
-                    id quod maxime placeat facere possimus, omnis.</div>
+<section id="accordion-section">
+    <div id="accordion-container" class="container">
+        <div id="accordion-section-left">
+            <p class="h5-dark">QUIS AUTEM</p>
+            <h2 class="h2-dark">Corporis suscipit laboriosam</h2>
+            <div id="accordion-section-wrapper">
+                <div class="accordion-section-item">
+                    <button class="text-dark">Totam rem aperiam <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-section-underline underline hide"></div>
+                    <div class="text-grey accordion-section-content hide">Nam libero tempore, cum soluta nobis est
+                        eligendi optio cumque nihil impedit quo minus
+                        id quod maxime placeat facere possimus, omnis.</div>
+                </div>
+                <div class="accordion-section-item">
+                    <button class="text-dark">Eaque ipsa quae <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-section-underline underline hide"></div>
+                    <div class="text-grey accordion-section-content hide">Nam libero tempore, cum soluta nobis est
+                        eligendi optio cumque nihil impedit quo minus
+                        id quod maxime placeat facere possimus, omnis.</div>
+                </div>
+                <div class="accordion-section-item">
+                    <button class="text-dark">Inventore veritatis <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-section-underline underline hide"></div>
+                    <div class="text-grey accordion-section-content hide">Nam libero tempore, cum soluta nobis est
+                        eligendi optio cumque nihil impedit quo minus
+                        id quod maxime placeat facere possimus, omnis.</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="accordion-section-right">
-        <picture>
-            <source
-                    media="(max-width: 576px)"
-                    srcset="/img/accordion-section-mobile.PNG">
-            <img src="/img/accordion-section.PNG" alt="accordion image">
-        </picture>
-        <div id="accordion-section-right-button">
-            <button>&#9654</button>
+        <div id="accordion-section-right">
+            <picture>
+                <source
+                        media="(max-width: 576px)"
+                        srcset="/img/accordion-section-mobile.PNG">
+                <img src="/img/accordion-section.PNG" alt="accordion image">
+            </picture>
+            <div id="accordion-section-right-button">
+                <button>&#9654</button>
+            </div>
         </div>
     </div>
 </section>
-<section id="gallery">
+<section id="gallery-section">
     <div id="gallery-container" class="container">
         <p class="h5-dark">NISI UT ALIQUID</p>
         <div id="gallery-container-top">
@@ -116,21 +120,27 @@
             </nav>
             <div class="gallery-img" data-num="1">
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-1.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-1.PNG" alt="gallery image">
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-2.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-2.PNG" alt="gallery image">
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-3.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-3.PNG" alt="gallery image">
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
@@ -139,21 +149,27 @@
             </div>
             <div class="gallery-img hide" data-num="2">
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-4.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-4.PNG" alt="gallery image">
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-5.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-5.PNG" alt="gallery image">
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-6.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-6.PNG" alt="gallery image">
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
@@ -162,21 +178,27 @@
             </div>
             <div class="gallery-img hide" data-num="3">
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-7.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-7.PNG" alt="gallery image">
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-8.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-8.PNG" alt="gallery image">
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-9.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-9.PNG" alt="gallery image">
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
@@ -185,21 +207,27 @@
             </div>
             <div class="gallery-img hide" data-num="4">
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-10.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-10.PNG" alt="gallery image"
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-11.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-11.PNG" alt="gallery image"
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-12.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-12.PNG" alt="gallery image"
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
@@ -208,21 +236,27 @@
             </div>
             <div class="gallery-img hide" data-num="5">
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-13.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-13.PNG" alt="gallery image"
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-14.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-14.PNG" alt="gallery image"
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
                     </div>
                 </div>
                 <div class="gallery-img-el">
-                    <img src="/img/gallery-img-15.PNG" alt="gallery image">
+                    <div class="image-container">
+                        <img src="/img/gallery-img-15.PNG" alt="gallery image"
+                    </div>
                     <div class="image-text">
                         <h4 class="h4-light">Exercitation</h4>
                         <p class="text-grey">Ullamco laboris</p>
@@ -233,58 +267,60 @@
         <button id="gallery-button" class="button text-light">All works</button>
     </div>
 </section>
-<section id="services" class="container">
-    <h2 class="h2-dark">Fugiatt quo</h2>
-    <p class="text-dark">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam.</p>
-    <div id="services-items">
-        <div class="services-items-item">
-            <img src="/img/services-icon-1.PNG" alt="service icon">
-            <div>
-                <h4 class="h4-dark">Consequuntur</h4>
-                <div class="underline"></div>
+<section id="services-section">
+    <div id="services-container" class="container">
+        <h2 class="h2-dark">Fugiatt quo</h2>
+        <p class="text-dark">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam.</p>
+        <div id="services-items">
+            <div class="services-items-item">
+                <img src="/img/services-icon-1.PNG" alt="service icon">
+                <div>
+                    <h4 class="h4-dark">Consequuntur</h4>
+                    <div class="underline"></div>
+                </div>
+                <p class="text-grey">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
             </div>
-            <p class="text-grey">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
-        </div>
-        <div class="services-items-item">
-            <img src="/img/services-icon-2.PNG" alt="service icon">
-            <div>
-                <h4 class="h4-dark">Voluptatem</h4>
-                <div class="underline"></div>
+            <div class="services-items-item">
+                <img src="/img/services-icon-2.PNG" alt="service icon">
+                <div>
+                    <h4 class="h4-dark">Voluptatem</h4>
+                    <div class="underline"></div>
+                </div>
+                <p class="text-grey">Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam</p>
             </div>
-            <p class="text-grey">Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam</p>
-        </div>
-        <div class="services-items-item">
-            <img src="/img/services-icon-3.PNG" alt="service icon">
-            <div>
-                <h4 class="h4-dark">Quisquam</h4>
-                <div class="underline"></div>
+            <div class="services-items-item">
+                <img src="/img/services-icon-3.PNG" alt="service icon">
+                <div>
+                    <h4 class="h4-dark">Quisquam</h4>
+                    <div class="underline"></div>
+                </div>
+                <p class="text-grey">Quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
             </div>
-            <p class="text-grey">Quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
-        </div>
-        <div class="services-items-item">
-            <img src="/img/services-icon-4.PNG" alt="service icon">
-            <div>
-                <h4 class="h4-dark">Aliquid</h4>
-                <div class="underline"></div>
+            <div class="services-items-item">
+                <img src="/img/services-icon-4.PNG" alt="service icon">
+                <div>
+                    <h4 class="h4-dark">Aliquid</h4>
+                    <div class="underline"></div>
+                </div>
+                <p class="text-grey">Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil</p>
             </div>
-            <p class="text-grey">Quis autem vel eum iure reprehenderit voluptate velit esse quam nihil</p>
-        </div>
-        <div class="services-items-item">
-            <img src="/img/services-icon-5.PNG" alt="service icon">
-            <div>
-                <h4 class="h4-dark">Excepteur</h4>
-                <div class="underline"></div>
+            <div class="services-items-item">
+                <img src="/img/services-icon-5.PNG" alt="service icon">
+                <div>
+                    <h4 class="h4-dark">Excepteur</h4>
+                    <div class="underline"></div>
+                </div>
+                <p class="text-grey">Sint occaecat cupidatat non proident culpa qui officia deserunt mollit anim</p>
             </div>
-            <p class="text-grey">Sint occaecat cupidatat non proident culpa qui officia deserunt mollit anim</p>
-        </div>
-        <div class="services-items-item">
-            <img src="/img/services-icon-6.PNG" alt="service icon">
-            <div>
-                <h4 class="h4-dark">Accusamus</h4>
-                <div class="underline"></div>
+            <div class="services-items-item">
+                <img src="/img/services-icon-6.PNG" alt="service icon">
+                <div>
+                    <h4 class="h4-dark">Accusamus</h4>
+                    <div class="underline"></div>
+                </div>
+                <p class="text-grey">Odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
             </div>
-            <p class="text-grey">Odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
         </div>
     </div>
 </section>
