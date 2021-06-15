@@ -49,10 +49,10 @@ export default class GalleryPages {
             const galleryDivs = gallery.querySelectorAll('.gallery-img-el');
             galleryDivs.forEach(element => {
                 element.addEventListener('mouseover', () => {
-                    element.querySelector('.image-text').classList.add('hideImgText');
+                    element.querySelector('.image-text').classList.add('changeVisibility');
                 });
                 element.addEventListener('mouseout', () => {
-                    element.querySelector('.image-text').classList.remove('hideImgText');
+                    element.querySelector('.image-text').classList.remove('changeVisibility');
                 });
             });
         })
