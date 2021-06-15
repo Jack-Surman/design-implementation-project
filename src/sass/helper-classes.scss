@@ -17,3 +17,9 @@
   position: relative;
   display: inline-block;
 }
+.circle {
+  background: transparent linear-gradient(242deg, $blue-main 0%, $purple-main 100%) 0% 0% no-repeat padding-box;
+  content: '';
+  border-radius: 50%;
+  z-index: 1000;
+}
