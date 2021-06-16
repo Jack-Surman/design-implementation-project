@@ -7,16 +7,26 @@
     align-items: center;
     margin-top: 7%;
     margin-bottom: 7%;
+    @media only screen and (max-width: $br-sm) {
+      flex-direction: column;
+    }
     #team-container-content {
       position: relative;
       text-align: left;
       width: 40%;
       height: 100%;
+      @media only screen and (max-width: $br-sm) {
+        width: 100%;
+      }
       h5 {
         margin-bottom: 15px;
       }
       h2 {
         margin-bottom: 10px;
+        @media only screen and (max-width: $br-sm) {
+          font-size: 40px;
+          line-height: 48px;
+        }
       }
       p {
         margin-bottom: 35px;
@@ -35,7 +45,11 @@
   height: 100px;
   top: 50%;
   left: 39%;
+  z-index: 1000;
   transform: translate(-50%, -30%);
+  @media only screen and (max-width: $br-sm) {
+   left: 100%;
+  }
 }
 #bottom-circle {
   &-big {
@@ -46,14 +60,23 @@
     left: -10%;
     transform: translate(-50%, -50%);
     opacity: .6;
+    z-index: 0;
+    @media only screen and (max-width: $br-sm) {
+      left: 10%;
+      top: 110%;
+    }
   }
   &-small {
     position: absolute;
     width: 150px;
     height: 150px;
-    top: 135%;
-    left: 50%;
+    top: 155%;
+    left: -20%;
     transform: translate(-50%, -50%);
     opacity: .6;
+    @media only screen and (max-width: $br-sm) {
+      left: 110%;
+      top: 120%;
+    }
   }
 }

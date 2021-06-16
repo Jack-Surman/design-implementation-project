@@ -131,6 +131,7 @@
         }
       }
       @media only screen and (max-width: $br-sm) {
+        transform: translateY(-190%);
         h4 {
           font-size: 42px;
           line-height: 30px;
