@@ -1,3 +1,7 @@
+.team-section-wrapper {
+  padding-top: 10px;
+  overflow: hidden;
+}
 #team-section {
   background-color: $blue-main;
   overflow: hidden;
@@ -81,14 +85,14 @@
   top: 50%;
   left: 39%;
   z-index: 1000;
-  transform: translate(-50%, -30%);
-
+  transform: translate(-50%, 60%);
+  
   @media only screen and (max-width: $br-xl) {
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, 50%);
   }
-
   @media only screen and (max-width: $br-sm) {
-   left: 100%;
+    left: 100%;
+    transform: translate(-50%, 60%);
   }
 }
 
