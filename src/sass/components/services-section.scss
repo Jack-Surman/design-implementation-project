@@ -1,3 +1,23 @@
+/**
+  TODO: Try and reduce the nesting a bit. Try to not go further than 3 deep
+  This can cause some performance issues. For example the CSS that is generated for
+  elements inside .services-items-item will look like this:
+
+  #services-section #services-container #services-items .services-items-item img
+  #services-section #services-container #services-items .services-items-item p
+  #services-section #services-container #services-items .services-items-item h4
+  etc...
+
+  You can imagine how many lines this could add to the overall file if every file is nested.
+  The above could be reduced to:
+    #services-section .services-items-item img
+    #services-section .services-items-item p
+    #services-section .services-items-item h4
+
+  It's good practice when writing SASS to think about how it will translate to CSS and make sure you're
+  trying to optimise where possible
+ */
+
 #services-section {
 
   #services-container {
