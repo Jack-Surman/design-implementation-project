@@ -56,6 +56,12 @@
     }
   }
 
+  /**
+    TODO: Transitions in wrong place. Do not need to be in the :hover styles for simple transitions
+    There Should be one hover for the whole block not one for each element inside it
+    Also you need to space things out more (goes for all files)
+   */
+
   .gallery-img {
     position: relative;
     .gallery-img-el {
