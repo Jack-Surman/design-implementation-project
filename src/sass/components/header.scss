@@ -5,9 +5,11 @@
   transform: translateX(-50%);
   width: 100%;
   z-index: 10000;
+
   @media only screen and (max-width: $br-sm) {
     background-color: #fff;
   }
+
   #header-container {
     position: relative;
     display: flex;
@@ -16,10 +18,13 @@
     width: 100%;
     z-index: 10000;
   }
+
   #header-title {
+
     @media only screen and (max-width: $br-md) {
       font-size: 36px;
     }
+
     @media only screen and (max-width: $br-sm) {
       color: $font-dark;
     }
@@ -30,6 +35,7 @@
     border: none;
     display: none;
     font-size: 30px;
+
     @media only screen and (max-width: $br-sm) {
       display: block;
     }
@@ -39,6 +45,7 @@
     display: flex;
     justify-content: center;
     flex-grow: 1;
+
     @media only screen and (max-width: $br-sm) {
       flex-direction: column;
       align-items: center;
@@ -53,6 +60,7 @@
     }
     a {
       padding: 0 2%;
+
       @media only screen and (max-width: $br-md) {
         padding: 0 1%;
       }
@@ -62,6 +70,7 @@
   #header-top-button {
     overflow: hidden;
     border: 1px solid #FFFFFF4B;
+
     @media only screen and (max-width: $br-sm) {
       display: none !important;
     }

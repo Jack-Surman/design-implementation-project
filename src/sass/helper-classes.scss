@@ -1,15 +1,19 @@
 .hamburgerToggle {
   display: flex !important;
 }
+
 .hide {
   display: none !important;
 }
+
 .scrollColorChange {
   background-color: $purple-main !important;
 }
+
 .changeVisibility {
   visibility: visible !important;
 }
+
 .underline {
   background-color: $purple-main;
   z-index: 0;
@@ -17,6 +21,7 @@
   position: relative;
   display: inline-block;
 }
+
 .circle {
   background: transparent linear-gradient(242deg, $blue-main 0%, $purple-main 100%) 0% 0% no-repeat padding-box;
   content: '';

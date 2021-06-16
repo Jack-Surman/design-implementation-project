@@ -9,9 +9,11 @@
   display: flex;
   position: relative;
   padding-bottom: 0;
+
   @media only screen and (max-width: $br-xl) {
     margin-top: 100px;
   }
+
   @media only screen and (max-width: $br-sm) {
     margin-top: 140px;
     flex-direction: column;
@@ -24,12 +26,15 @@
     top: 29%;
     background-color: $button-orange;
     width: 40%;
+
     @media only screen and (max-width: $br-lg) {
       top: 10%;
     }
+
     @media only screen and (max-width: $br-md) {
       top: 5%;
     }
+
     @media only screen and (max-width: $br-sm) {
       top: 20%;
     }
@@ -38,10 +43,12 @@
   #image-container {
     overflow: hidden;
     position: relative;
+
     @media only screen and (max-width: $br-lg) {
       width: 55%;
       left: 21%;
     }
+
     @media only screen and (max-width: $br-sm) {
       left: 10%;
       width: 500px;
@@ -52,6 +59,7 @@
       z-index: 0;
       left: 10%;
       transform: translateY(3px);
+
       @media only screen and (max-width: $br-xl) {
         width: 90%;
         left: 12%;
@@ -60,18 +68,21 @@
 
     .fb-icon {
       right: 99px;
+
       @media only screen and (max-width: $br-sm) {
         left: 200px;
       }
     }
     .tw-icon {
       right: 59px;
+
       @media only screen and (max-width: $br-sm) {
         left: 240px;
       }
     }
     .ig-icon {
       right: 19px;
+
       @media only screen and (max-width: $br-sm) {
         left: 280px;
       }
@@ -88,9 +99,11 @@
       padding: .5%;
       position: absolute;
       bottom: 49px;
+
       @media only screen and (max-width: $br-md) {
         bottom: 20px;
       }
+
       a {
         font-size: 16px;
         color: $font-white;
@@ -103,22 +116,27 @@
     display: flex;
     flex-direction: column;
     position: relative;
+
     @media only screen and (max-width: $br-sm) {
       width: 100%;
       height: 300px;
     }
+
     h1 {
       position: relative;
       top: 14%;
+
       @media only screen and (max-width: $br-lg) {
         font-size: 56px;
         top: 0%;
       }
+
       @media only screen and (max-width: $br-md) {
         font-size: 40px;
         line-height: 48px;
         top: -5%;
       }
+
       @media only screen and (max-width: $br-sm) {
         font-size: 56px;
         line-height: 64px;
@@ -131,18 +149,21 @@
       position: relative;
       top: 19%;
       width: 130%;
+
       @media only screen and (max-width: $br-lg) {
         font-size: 12px;
         line-height: 20px;
         top: 5%;
         width: 150%;
       }
+
       @media only screen and (max-width: $br-md) {
         font-size: 12px;
         line-height: 17px;
         top: 0%;
         width: 220%;
       }
+
       @media only screen and (max-width: $br-sm) {
         font-size: 16px;
         line-height: 24px;
