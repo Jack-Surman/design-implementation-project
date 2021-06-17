@@ -24,3 +24,14 @@
   border-radius: 50%;
   z-index: 1000;
 }
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: .5%;
+  bottom: 49px;
+}

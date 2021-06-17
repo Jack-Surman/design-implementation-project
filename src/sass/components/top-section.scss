@@ -89,16 +89,8 @@
     }
 
     div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-      height: 30px;
       border: 3px $font-white solid;
-      border-radius: 50%;
-      padding: .5%;
       position: absolute;
-      bottom: 49px;
 
       @media only screen and (max-width: $br-md) {
         bottom: 20px;

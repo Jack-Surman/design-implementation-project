@@ -1,0 +1,85 @@
+#bottom-part {
+  position: relative;
+
+  hr {
+    border-top: 1px solid $gray-main;
+  }
+
+  &:before {
+    content: "";
+    background-image: url('/dist/img/footer-background.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+}
+#contact-section {
+  position: relative;
+  z-index: 1000;
+
+  #contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    margin-top: 50px;
+
+    @media only screen and (max-width: $br-sm) {
+      margin-bottom: 80px;
+    }
+
+    p {
+      width: 50%;
+      text-align: center;
+      margin: 30px 0;
+
+      @media only screen and (max-width: $br-sm) {
+        width: 100%;
+      }
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+
+      @media only screen and (max-width: $br-sm) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      button {
+        margin-left: 30px;
+        background-color: $purple-main;
+        border: none;
+
+        @media only screen and (max-width: $br-sm) {
+          width: 40%;
+        }
+      }
+
+      input {
+        padding-right: 50%;
+        padding-left: 20px;
+        border: 1px solid $gray-main;
+        border-radius: 5px;
+
+        @media only screen and (max-width: $br-sm) {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 250px;
+          padding-left: 20px;
+          margin-bottom: 20px;
+        }
+
+        &::placeholder {
+          color: $gray-main;
+        }
+      }
+    }
+  }
+}
