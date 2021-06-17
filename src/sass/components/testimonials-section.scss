@@ -1,0 +1,81 @@
+#testimonials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonials-top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+
+  p {
+    width: 55%;
+    margin-top: 10px;
+
+    @media only screen and (max-width: $br-sm) {
+      width: 100%;
+    }
+  }
+}
+
+#testimonials-middle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $br-sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 2%;
+    box-shadow: 0 .5rem 5rem rgba(1,1,1, .2);
+
+    @media only screen and (max-width: $br-sm) {
+      width: 100%;
+      padding: 5%;
+    }
+
+    &:not(div:last-of-type) {
+      margin-right: 20px;
+
+      @media only screen and (max-width: $br-sm) {
+        margin: 10px 0;
+      }
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    img {
+      position: relative;
+      width: 20%;
+      margin-bottom: 10px;
+      @media only screen and (max-width: $br-lg) {
+        width: 40%;
+      }
+      @media only screen and (max-width: $br-sm) {
+        width: 15%;
+      }
+    }
+  }
+}
+
+#testimonials-bottom {
+  margin-top: 50px;
+  img {
+    width: 100%;
+  }
+}
