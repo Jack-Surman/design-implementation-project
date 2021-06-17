@@ -1,7 +1,6 @@
 export default class GalleryPages {
     constructor() {
         this.changePage();
-        // this.showImageText();
         this.showImages();
     }
     changePage() {
@@ -45,20 +44,4 @@ export default class GalleryPages {
             })
         })
     }
-    // showImageText() {
-    //     const galleryElements = document.querySelectorAll('.gallery-img');
-    //     galleryElements.forEach(gallery => {
-    //         const galleryDivs = gallery.querySelectorAll('.gallery-img-el');
-    //         galleryDivs.forEach(element => {
-    //             element.addEventListener('mouseover', () => {
-    //                 element.querySelector('.image-text').classList.add('changeVisibility');
-    //                 element.querySelector('.overlay').classList.remove('hide');
-    //             });
-    //             element.addEventListener('mouseout', () => {
-    //                 element.querySelector('.image-text').classList.remove('changeVisibility');
-    //                 element.querySelector('.overlay').classList.add('hide');
-    //             });
-    //         });
-    //     })
-    // }
 }

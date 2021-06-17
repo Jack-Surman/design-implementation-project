@@ -40,6 +40,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all .3s;
 
     @media only screen and (max-width: $br-md) {
       padding: 1% 2%;
@@ -47,7 +49,6 @@
 
     &:hover {
       box-shadow: 0 .5rem 5rem rgba(1,1,1, .1);
-      cursor: pointer;
     }
 
     h4 {

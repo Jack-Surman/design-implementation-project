@@ -43,6 +43,11 @@
     a {
       margin-top: 5px;
       cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        color: $purple-main;
+      }
     }
   }
 }
@@ -64,6 +69,11 @@
 
     div {
       border: 3px $purple-main solid;
+      transition: all .3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       @media only screen and (max-width: $br-md) {
         bottom: 20px;

@@ -91,6 +91,11 @@
     div {
       border: 3px $font-white solid;
       position: absolute;
+      transition: all .3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       @media only screen and (max-width: $br-md) {
         bottom: 20px;

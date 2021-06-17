@@ -55,6 +55,14 @@
           border: none;
           background-color: transparent;
           margin-right: 20px;
+          cursor: pointer;
+          margin-bottom: 5px;
+          padding-bottom: 5px;
+          transition: all .3s;
+
+          &:hover {
+            text-decoration: underline $purple-main;
+          }
 
           @media only screen and (max-width: $br-sm) {
             margin-bottom: 10px;
