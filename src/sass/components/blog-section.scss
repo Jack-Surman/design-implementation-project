@@ -39,6 +39,11 @@
     width: 100%;
   }
 
+  /**
+   TODO: try to avoid widths that extend past their parent. In a lot of cases they will cause a sideways scrollbar
+   Try increasing the parent width to match this elements and add a % padding or max-width to the elements that you
+   don't want to be full width
+   */
   h2 {
     width: 120%;
 
