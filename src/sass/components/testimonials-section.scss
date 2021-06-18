@@ -41,35 +41,17 @@
     width: 60%;
     padding: 2%;
     box-shadow: 0 .5rem 5rem rgba(1,1,1, .2);
-    /**
-      TODO: Make sure you have a background applied to elements with shadows. Otherwise the shadow from the adjacent element
-       will go inside the element (add background: #fff to see what I mean)
-     */
+    margin-right: 20px;
+    background: #fff;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     @media only screen and (max-width: $br-sm) {
       width: 100%;
       padding: 5%;
-    }
-
-    /**
-      TODO: Really good implementation of the :not()
-      A slightly simpler way to to it is to add the margin-right to all of them, and use :last-child to nullify it. E.g
-      div {
-        margin-right: 20px;
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-
-      It's very similar, I personally find this method a bit more readable
-     */
-    &:not(div:last-of-type) {
-      margin-right: 20px;
-
-      @media only screen and (max-width: $br-sm) {
-        margin: 10px 0;
-      }
+      margin: 10px 0;
     }
 
     p {
