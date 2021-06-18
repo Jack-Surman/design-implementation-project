@@ -10,12 +10,13 @@
   transition: all .1s;
 
   &:hover {
-    transform: translateY(1px);
+    transform: translateY(-1px);
+    box-shadow: 0 .2rem .5rem rgba(1, 1, 1, .2);
   }
 
   &:active {
     transform: translateY(3px);
-    box-shadow: 0 .2rem .5rem rgba(1, 1, 1, .2);
+    box-shadow: 0 .2rem .1rem rgba(1, 1, 1, .3);
   }
 
   @media only screen and (max-width: $br-md) {

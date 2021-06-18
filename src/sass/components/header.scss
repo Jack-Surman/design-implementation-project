@@ -64,8 +64,8 @@
       border-radius: 10px;
 
       &:hover {
-        color: $font-white;
-        box-shadow: 0 .05rem .2rem rgba(255 ,255 ,255, .3);
+        color: $font-dark;
+        transform: translateY(1px);
       }
 
       @media only screen and (max-width: $br-md) {
